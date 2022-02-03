@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Carousel</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section id="carousel">
+        <button class="carousel-button prev">&#8678</button>
+        <button class="carousel-button next">&#8680</button>
+        <div class="slides">
+            <div class="slide active">
+                <img src="images/lance-asper-ZTpH3mNvWro-unsplash.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="images/22977803505_9c447f0f20_k.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="images/antoine-beauvillain-qrPqGP-SG8w-unsplash.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="images/8537050942_a343cfcded_o.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="images/niko-photos-tGTVxeOr_Rs-unsplash.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="images/stefan-kunze-1-C334jLxG0-unsplash.jpg" alt="">
+            </div>
+        </div>
+        <div class="dateTime">
+            <div class="time" onload = "showTime()"></div>
+            <div class="date" onload = "showTime()"></div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>

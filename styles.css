@@ -1,0 +1,75 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#carousel{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+.carousel-button{
+    position: absolute;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.1);
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 4rem;
+    padding: 0 0.5rem;
+    border: none;
+    border-radius: 10px;
+    top: 50%;
+    transform: translateY(-50%); /*To exactly center them*/
+}
+
+.carousel-button:hover,
+.carousel-button:focus{
+    color: white;
+}
+
+.carousel-button:focus{
+    border: 1px solid black;
+}
+
+.carousel-button.prev{
+    left: 1rem;
+}
+
+.carousel-button.next{
+    right: 1rem;
+}
+
+.slide{
+   position: absolute;
+   inset: 0; /*That's gonna make the top, left, right & bottom of our img 0 as we can see our img is taking whole lot of space*/
+   opacity: 0;
+}
+
+.slide img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* To maintain aspect ratio*/
+    object-position: center; /* It always focus at the center of the image*/
+}
+
+.slide.active{
+    opacity: 1;
+}
+
+
+.dateTime{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    font-size: 3.5rem;
+    line-height: 4.4rem;
+}
